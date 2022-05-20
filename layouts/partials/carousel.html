@@ -2,8 +2,18 @@
 {{ if gt (len .Site.Data.carousel) 0 }}
 <section>
     <div class="home-carousel">
-        <div class="dark-mask"></div>
+        <div class="video-mask">
+            {{ if .Site.Params.carouselBgVideo.enable }}
+            <div class="video-mask">
+                <video loop="true" muted="" playsinline="" width="100%" preload="auto" sophis-video-control="true" autoplay>
+                    <source src="{{ .Site.Params.carouselBgVideo.video }}" type="video/mp4">
+                    <img src="{{ .Site.Params.carouselBgVideo.cover }}" alt="{{ .Site.Params.carouselBgVideo.coveralt }}">
+                </video>
+            </div>
+            {{ end }}
+        </div>
         <div class="container">
+            <div class="dark-mask"></div>
             <div class="homepage owl-carousel"
                 data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
                 data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"

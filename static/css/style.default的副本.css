@@ -1164,22 +1164,14 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.home-carousel .video-mask {
-  position: absolute;
-  z-index: auto;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .home-carousel .dark-mask {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: var(--primary-accent);
-  opacity: 0.4;
+  opacity: 0.9;
   filter: alpha(opacity=90);
 }
 .home-carousel .owl-carousel {
