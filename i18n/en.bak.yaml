@@ -7,16 +7,14 @@
 - id: portedBy
   translation: "Ported to Hugo by"
 
-# 到联系页面
 - id: contactGoTo
-  translation: "send message"
+  translation: "Go to contact page"
 
 - id: contactAddrTitle
   translation: "Address"
 
-# 联系title
 - id: contactTitle
-  translation: " "
+  translation: "Contact"
 
 - id: contactForm
   translation: "Contact form"
@@ -60,9 +58,8 @@
 - id: recentPosts
   translation: "Recent posts"
 
-# 转化为contact
 - id: aboutUs
-  translation: "ContactUs"
+  translation: "About us"
 
 - id: newer
   translation: "Newer"
