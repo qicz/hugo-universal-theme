@@ -7,6 +7,7 @@
             <video loop="true" muted="" playsinline="" width="100%" preload="auto" sophis-video-control="true" autoplay>
                 <source src="{{ .Site.Params.carouselVideo.video }}" type="video/mp4">
                 <img src="{{ .Site.Params.carouselVideo.cover }}" alt="{{ .Site.Params.carouselVideo.coveralt }}">
+                Sorry, your browser doesn't support embedded videos.
             </video>
         </div>
         {{ end }}
@@ -19,7 +20,7 @@
                 {{ range sort .Site.Data.carousel "weight" }}
                 <div class="item">
                     {{ if .href }}
-                    <a href="{{ .href }}">
+                    <a href="{{ .href }}" target="_blank" title="{{ .title }}">
                     {{ end }}
                         <div class="row">
                             <div class="col-sm-5 right">

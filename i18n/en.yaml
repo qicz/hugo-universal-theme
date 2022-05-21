@@ -11,8 +11,9 @@
 - id: contactGoTo
   translation: "send message"
 
+# contact页面address title
 - id: contactAddrTitle
-  translation: "Address"
+  translation: " "
 
 # 联系title
 - id: contactTitle
