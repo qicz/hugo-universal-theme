@@ -2614,6 +2614,11 @@ fieldset[disabled] .btn-template-primary.active {
   border-bottom: none;
   margin-bottom: 0;
 }
+
+#footer .social {
+  padding: 20px 0;
+}
+
 #footer .social a {
   color: #555555;
   font-size: 25px;
