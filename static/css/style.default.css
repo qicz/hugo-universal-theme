@@ -2629,8 +2629,6 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #copyright {
-  background: #000;
-  opacity: 0.9;
   color: gray;
   padding: 1px 0;
   padding-bottom: 40px;
