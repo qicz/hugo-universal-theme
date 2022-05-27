@@ -63,6 +63,30 @@
                 <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
                 {{ end }}
             </div>
+            <!-- langs switch -->
+            <div style="float: right;">
+                {{ if .Site.IsMultiLingual }}
+                <a href="javascript:void(0);" title="{{ T "selectLanguage" }}">
+                <select id="language-select-desktop" onchange="location = this.value;">
+                    {{ if eq .Kind "404" }}
+                        {{ range .Sites }}
+                            {{ $link := printf "%v/404.html" .LanguagePrefix }}
+                            <option value="{{ $link }}"{{ if eq . $.Site }} selected{{ end }}>
+                                {{ .Language.LanguageName }}
+                            </option>
+                        {{ end }}
+                    {{ else }}
+                        {{ range .AllTranslations }}
+                            <option value="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} selected{{ end }}>
+                                {{ .Language.LanguageName }}
+                            </option>
+                        {{ end }}
+                    {{ end }}
+                </select>
+                </a>
+                {{ end }}
+            </div>
+            <!-- langs switch end -->
         </div>
     </div>
     <!-- /#copyright -->
