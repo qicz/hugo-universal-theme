@@ -10,11 +10,13 @@
 - id: contactGoTo
   translation: "跳到联系页面"
 
+# contact页面address title
 - id: contactAddrTitle
-  translation: "地址"
+  translation: " "
 
+# 联系title
 - id: contactTitle
-  translation: "联系"
+  translation: " "
 
 - id: contactForm
   translation: "联系表单"
