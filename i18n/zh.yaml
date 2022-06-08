@@ -55,7 +55,7 @@
   translation: "阅读更多"
 
 - id: authorBy
-  translation: "由"
+  translation: " "
 
 - id: recentPosts
   translation: "最新博客"
@@ -64,10 +64,10 @@
   translation: "关于我们"
 
 - id: newer
-  translation: "更新"
+  translation: "最近"
 
 - id: older
-  translation: "更旧"
+  translation: "之前"
 
 - id: publishedOn
   translation: "在"
